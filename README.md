@@ -1,4 +1,4 @@
-# Default WonderCMS theme
+# Default WonderCMS theme 2020
 Fully responsive.
 
 ## Preview
