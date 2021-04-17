@@ -57,7 +57,7 @@ ul.nav.navbar-nav.navbar-right li a:hover, ul.nav.navbar-nav.navbar-right li.act
 	-webkit-transform: rotate(-4deg);
 	-ms-transform: rotate(-4deg);
 	transform: rotate(-4deg);
-	z-index: 1041;
+	z-index: 10;
 	color: #212529;
 	position: relative
 }
@@ -80,7 +80,7 @@ ul.nav.navbar-nav.navbar-right li a:hover, ul.nav.navbar-nav.navbar-right li.act
 		-webkit-transform: rotate(-4deg);
 		-ms-transform: rotate(-4deg);
 		transform: rotate(-4deg);
-	    z-index: 1041;
+	    	z-index: 1041;
 		color: #212529;
 		position: relative
 	}
