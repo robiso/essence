@@ -9,6 +9,10 @@ html, body {
 	overflow-x: hidden
 }
 
+@font-face {
+	font-display: swap
+}
+
 .flex-grow {
 	flex: 1
 }
@@ -21,9 +25,9 @@ a, a:hover, a:active {
 h1 {font-size: 5rem !important}
 .padding40 {padding: 40px}
 .navbar-default .navbar-toggle {border: 0}
-.navbar-light .navbar-nav .nav-link { color: #dfdfdf}
-.navbar-light .navbar-brand, .navbar-light:hover .navbar-brand:hover { color: #fff}
-.nav li > a { padding: 20px}
+.navbar-light .navbar-nav .nav-link {color: #dfdfdf}
+.navbar-light .navbar-brand, .navbar-light:hover .navbar-brand:hover {color: #fff}
+.nav li > a {padding: 20px}
 
 .navbar li {
 	font-size: 16px;
@@ -72,6 +76,10 @@ ul.nav.navbar-nav.navbar-right li a:hover, ul.nav.navbar-nav.navbar-right li.act
 @media (min-width: 300px) and (max-width: 767px) {
 	h1 {font-size: 3em !important}
 
+	.navbar-brand {
+		white-space: normal !important
+	}
+
 	.customBackground {
 		min-height: 80%;
 		min-width: 140%;
@@ -80,7 +88,7 @@ ul.nav.navbar-nav.navbar-right li a:hover, ul.nav.navbar-nav.navbar-right li.act
 		-webkit-transform: rotate(-4deg);
 		-ms-transform: rotate(-4deg);
 		transform: rotate(-4deg);
-	    	z-index: 1041;
+		z-index: 1041;
 		color: #212529;
 		position: relative
 	}
