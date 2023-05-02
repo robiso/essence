@@ -54,47 +54,43 @@ ul.nav.navbar-nav.navbar-right li a:hover, ul.nav.navbar-nav.navbar-right li.act
 }
 
 .customBackground {
-	min-height: 110%;
-	min-width: 110%;
-	left: -50px;
-	background-color: #f2f4f9;
-	-webkit-transform: rotate(-4deg);
-	-ms-transform: rotate(-4deg);
-	transform: rotate(-4deg);
-	z-index: 1041;
-	color: #212529;
-	position: relative
+   position: relative;
+}
+
+.customBackground:before {
+   content: '';
+   min-height: 100%;
+   min-width: 200%;
+   left: -50%;
+   display: block;
+   position: absolute;
+   background-color: #f2f4f9;
+   -webkit-transform: rotate(-4deg);
+   -ms-transform: rotate(-4deg);
+   transform: rotate(-4deg);
+   z-index: 1;
+   color: #212529;
 }
 
 .resetTextRotation {
-	transform: rotate(4deg) !important;
-	max-width: 92%;
-	left: 50px
+   padding: 80px 40px;
+   z-index: 2;
 }
 
 
 @media (min-width: 300px) and (max-width: 767px) {
-	h1 {font-size: 3em !important}
+   h1 {font-size: 3em !important}
 
-	.navbar-brand {
-		white-space: normal !important
-	}
+   .navbar-brand {
+      white-space: normal !important
+   }
 
-	.customBackground {
-		min-height: 80%;
-		min-width: 140%;
-		left: -40px;
-		background-color: #f2f4f9;
-		-webkit-transform: rotate(-4deg);
-		-ms-transform: rotate(-4deg);
-		transform: rotate(-4deg);
-		z-index: 1041;
-		color: #212529;
-		position: relative
-	}
+   .customBackground:before {
+      display: none;
+   }
 
-	.resetTextRotation {
-		transform: rotate(4deg) !important;
-		max-width: 70%
-	}
+   .resetTextRotation {
+      background: rgb(242, 244, 249);
+      padding: 40px;
+   }
 }
